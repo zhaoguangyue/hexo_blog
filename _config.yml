@@ -3,23 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 赵广越的笔记
+subtitle: '赵广越的个人笔记'
+description: '赵广越的个人笔记,博客,分享'
+keywords: '赵广越,广越,前端,博客,分享,js,javascript,vue,react,webpack'
+author: 赵广越
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: http://zhaoguangyue.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+pretty_urls: #美化url
+  trailing_index: true #是否在永久链接中保留尾部的 index.html，设置为 false 时去除
+  trailing_html: false #是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)
 
 # Directory
 source_dir: source
@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -98,9 +98,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: myTheme
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: 
+  branch: master
+  message: ''

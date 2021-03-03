@@ -104,6 +104,6 @@ theme: myTheme
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: 
-  branch: master
+  repo: https://github.com/zhaoguangyue/myblog.git
+  branch: main
   message: ''
